@@ -70,62 +70,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!-- inner banner -->
     <!-- about -->
-    <section class="main-sec-w3 pb-sm-5 about-bot-w3l">
+    <section class="main-sec-w3 pb-5">
         <div class="container">
-            <div class="wthree-inner-sec  about-bot-w3ls">
+            <div class="wthree-inner-sec">
                 <div class="sec-head">
-                    <h1 class="sec-title-w3 text-capitalize">about me</h1>
+                    <h1 class="sec-title-w3 text-capitalize">data jalan</h1>
                     <span class="block"></span>
                 </div>
-                <div class="about_w3l position-relative">
-                    <div class="profile-wrapper">
-                        <div class="profile-image">
-                            <img src="images/about.jpg" alt="about _image" class="img-fluid" />
-                        </div>
-                        <h2 class="profile-title">James
-                            <span>Smith</span>
-                        </h2>
-                        <div class="profile-info">
-                            <div class="content">
-                                <div class="row  pro-contact">
-                                    <div class="col-4">
-                                        <img src="images/profile.jpg" alt="" class="rounded-circle img-fluid">
-                                    </div>
-                                    <div class="col-sm-8  my-auto">
-                                        <div class="link_about">
-                                            <i class="fa fa-link" aria-hidden="true"></i>
-                                            <a href="http://jamessmith.com" target="_blank">www.jamessmith.com</a>
-                                        </div>
-                                        <div class="link_about my-2">
-                                            <i class="fa fa-globe" aria-hidden="true"></i>
-                                            <a href="#">www.resume.com</a>
-                                        </div>
-                                        <div class="link_about">
-                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                                            <a href="#">mail@bio.com</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>#Graphic / #Web #Designer & #frontend #developer Occasional blogger.Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis
-                                    quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. </p>
 
-                                <div class="stats">
-                                    <div class="row">
-                                        <div class="col-4 stat">
-                                            <span class="number">342</span> Followers
-                                        </div>
-                                        <div class="col-4 stat">
-                                            <span class="number">991</span> Following
-                                        </div>
-                                        <div class="col-4 stat">
-                                            <span class="number">175</span> Posts
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="wthree-row py-3">
+                    <ul class="portfolio-categ filter pb-md-5 pb-3 mb-4">
+                        <li class="port-filter all active">
+                            <a href="#">Data Jalan</a>
+                        </li>
+                        <li class="cat-item-1">
+                            <a href="#" title="Category 1">Foto Jalan</a>
+                        </li>
+                        <li class="cat-item-2">
+                            <a href="#" title="Category 2">Laporan Jalan</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
