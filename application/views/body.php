@@ -71,7 +71,81 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- banner -->
     <section class="main-sec-w3 pb-5">
         <div class="container">
-            <!-- DI SINI MAPSNYA WOY -->
+            <div id="googleMap"	>
+		
+	</div>
+	<script>
+	var karanganyar = {lat: -7.6164401, lng: 110.9894384};
+	function create_map(){
+		var mapCenter = {
+			center:new google.maps.LatLng(karanganyar),
+			zoom:11,
+			streetViewControl:false
+		};
+		var map = new google.maps.Map(document.getElementById("googleMap"), mapCenter);
+		var jalan = 'data/jaringan-jalan.geojson';
+		var kec = 'data/kecamatan.geojson';
+
+		var jalanLayer = new google.maps.Data({map: map});
+		var kecLayer = new google.maps.Data({map: map});
+
+		jalanLayer.loadGeoJson(jalan);
+		kecLayer.loadGeoJson(kec);
+
+		jalanLayer.setStyle(function(feature){
+			var colorLine = feature.getProperty('stroke');
+			var lineWidth = feature.getProperty('stroke-width');
+			var opacity = feature.getProperty('stroke-opacity');
+
+			return{
+				strokeColor: colorLine,
+				strokeWeight: lineWidth,
+				strokeOpacity: opacity
+			};
+		});
+
+		kecLayer.setStyle(function(feature){
+			var fillColor = feature.getProperty('fill');
+			var fillOpacity = feature.getProperty('fill-opacity')
+			var colorLine = feature.getProperty('stroke');
+			var lineWidth = feature.getProperty('stroke-width');
+			var opacity = feature.getProperty('stroke-opacity');
+
+			return{
+				fillColor: fillColor,
+				strokeColor: colorLine,
+				strokeWeight: lineWidth,
+				strokeOpacity: opacity
+			};
+		});
+
+		var infoJalan = new google.maps.InfoWindow();
+		jalanLayer.addListener('click', function(event){
+			// infoJalan.setContent("<b>TEST</b> <br><br> Halo ini jalan.. kamu?");
+			// infoJalan.setPosition(event.latLng);
+			// infoJalan.open(map);
+			placeMarker(event.latLng);
+		});
+
+		function placeMarker(location){
+			var marker = new google.maps.Marker({
+			    position: location,
+			    map: map,
+			    draggable:false,
+			    title:"Drag me!"
+			});
+			map.panTo(location);
+		}
+
+		google.maps.event.addListener(marker, "click", function (event) {
+            alert(this.position);
+		});
+
+		var listener1 = kecLayer.addListener('click', function(event){});
+		google.maps.event.removeListener(listener1);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEIAOa6sUw5v4RyfchsJK2IXcJ1mwUcEs&callback=create_map"></script>
         </div>
     </section>
     <!-- //banner-->
