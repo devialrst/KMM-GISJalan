@@ -38,57 +38,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
     <!-- header -->
-    <header>
-        <!--nav -->
-        <a href="#menu" class="menu-link">
-            <span>toggle menu</span>
-        </a>
-        <nav id="menu" class="panel">
-            <ul>
-                <li>
-                    <a href="<?php echo base_url(); ?>" class="active">Beranda</a>
-                </li>
-                <li>
-                    <a href="<?php echo base_url(); ?>datajalan">Data Jalan</a>
-                </li>
-                <li>
-                    <a href="<?php echo base_url(); ?>login">Login</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- //nav -->
-        <!-- logo -->
-        <div class="logo_wthree">
-            <a href="index.html">
-                <i class="fab fa-node-js"></i>
+    <div class="inner-banner-agile">
+        <header>
+            <!--nav -->
+            <a href="#menu" class="menu-link">
+                <span>toggle menu</span>
             </a>
-        </div>
-        <!-- //logo -->
-    </header>
+            <nav id="menu" class="panel">
+                <ul>
+                    <li>
+                        <a href="<?php echo base_url(); ?>" class="active">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>datajalan">Data Jalan</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>login">Login</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+            <!-- logo -->
+            <div class="logo_wthree">
+                <a href="index.html">
+                    <i class="fab fa-node-js"></i>
+                </a>
+            </div>
+            <!-- //logo -->
+        </header>
+    </div>
     <!-- //header -->
     <!-- banner -->
-    <section class="slide-wrapper">
-        <!-- banner slide -->
-        <div class="agile_banner bg1">
-            <div class="layer">
-                <div class="container">
-                    <div class="banner_text_wthree">
-                        <div class="d-flex">
-                            <h1>welcome to </h1>
-                            <h2>&nbsp;my site</h2>
-                        </div>
-                        <div id="text" class="banner_text_w3ls my-md-5 my-3"></div>
-                        <ul class="list-inline bnr_list_w3">
-                            <li class="list-inline-item">
-                                <a class="btn  text-white  scroll" href="<?php echo base_url(); ?>portfolio">view my work </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn  text-white bg-dark scroll" href="<?php echo base_url(); ?>contact">contact me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section class="main-sec-w3 pb-5">
+        <div class="container">
+            <!-- DI SINI MAPSNYA WOY -->
         </div>
     </section>
     <!-- //banner-->
