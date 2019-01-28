@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
     <!-- inner banner -->
-    <div class="inner-banner-agile skillset">
+    <div class="inner-banner-agile">
         <!-- header -->
         <header>
             <!--nav -->
@@ -48,22 +48,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <nav id="menu" class="panel">
                 <ul>
                     <li>
-                        <a href="<?php echo base_url(); ?>">Home</a>
+                        <a href="<?php echo base_url(); ?>">Beranda</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url(); ?>about">About</a>
+                        <a href="<?php echo base_url(); ?>datajalan">Data Jalan</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url(); ?>skills" class="active">Skills</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>services">Services</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>portfolio">Portofolio</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo base_url(); ?>contact">contact</a>
+                        <a href="<?php echo base_url(); ?>login" class="active">Login</a>
                     </li>
                 </ul>
             </nav>
@@ -80,40 +71,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!-- inner banner -->
     <!-- skill set -->
-    <section class="pb-5">
+    <section class="main-sec-w3 pb-5">
         <div class="container">
-            <div class="wthree-inner-sec skills-bg">
-                <div class="sec-head text-center">
-                    <h1 class="sec-title-w3 text-capitalize text-dark">skill set</h1>
-                    <span class="block mx-auto"></span>
+            <div class="wthree-inner-sec">
+                <div class="sec-head">
+                    <h1 class="sec-title-w3 text-capitalize">login</h1>
+                    <span class="block"></span>
                 </div>
-                <div class="wthree-row py-md-5 py-3">
-                    <div id="wrapper">
-                        <div class="chart">
-                            <table id="data-table" class="table-responsive">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">CSS</th>
-                                        <th scope="col">SEO</th>
-                                        <th scope="col">Design</th>
-                                        <th scope="col">HTML</th>
-                                        <th scope="col">CMS</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>90</td>
-                                        <td>50</td>
-                                        <td>80</td>
-                                        <td>95</td>
-                                        <td>80</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                
+                <div class="form-wrapper">
+                    <form action="#" method="post">
+                        <div class="d-flex flex-column">
+                            <label>Username</label>
+                            <input class="text-input" type="text" name="text1" id="text1" required>
                         </div>
-                    </div>
+                        
+                        <div class="d-flex flex-column my-sm-5 my-3">
+                            <label>Password</label>
+                            <input class="text-input" type="text" name="text2" id="text2" required>
+                        </div>
+
+                        <input class="submit" type="submit" value="Login">
+                    </form>
                 </div>
-            </div>
+            </div>            
         </div>
     </section>
     <!-- //skill set -->

@@ -23,28 +23,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('body');
 	}
 
-	public function about()
+	public function datajalan()
 	{
-		$this->load->view('about');
+		$this->load->view('datajalan');
 	}
 
-	public function contact()
+	public function login()
 	{
-		$this->load->view('contact');
-	}
-
-	public function portfolio()
-	{
-		$this->load->view('portfolio');
-	}
-
-	public function services()
-	{
-		$this->load->view('services');
-	}
-
-	public function skills()
-	{
-		$this->load->view('skills');
+		$this->load->view('login');
 	}
 }
