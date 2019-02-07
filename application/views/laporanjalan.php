@@ -54,7 +54,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <a href="<?php echo base_url(); ?>datajalan">Data Jalan</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url(); ?>login" class="active">Login</a>
+                        <a href="<?php echo base_url(); ?>laporanjalan" class="active">Laporan Jalan</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>control_grafik">Grafik Jalan</a>
                     </li>
                 </ul>
             </nav>
@@ -75,26 +78,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="wthree-inner-sec">
                 <div class="sec-head">
-                    <h1 class="sec-title-w3 text-capitalize">login</h1>
+                    <h1 class="sec-title-w3 text-capitalize">laporan jalan</h1>
                     <span class="block"></span>
                 </div>
-                
-                <div class="form-wrapper">
-                    <form action="#" method="post">
-                        <div class="d-flex flex-column">
-                            <label>Username</label>
-                            <input class="text-input" type="text" name="text1" id="text1" required>
-                        </div>
-                        
-                        <div class="d-flex flex-column my-sm-5 my-3">
-                            <label>Password</label>
-                            <input class="text-input" type="text" name="text2" id="text2" required>
-                        </div>
 
-                        <input class="submit" type="submit" value="Login">
-                    </form>
+                <div class="wthree-row py-3">
+                    <ul class="portfolio-categ filter pb-md-5 pb-3 mb-4">
+                        <li class="cat-item-1">
+                            <a href="#" title="Category 1">Daftar Kerusakan Jalan</a>
+                        </li>
+                        <li class="cat-item-2">
+                            <a href="#" title="Category 2">Grafik Kerusakan Jalan</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
     <!-- //skill set -->

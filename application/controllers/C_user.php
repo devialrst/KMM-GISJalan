@@ -18,6 +18,14 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	function __construct()
+		{
+			parent::__construct();		
+			$this->load->model('m_data');
+	        $this->load->helper('url');
+		}
+
 	public function index()
 	{
 		$this->load->view('body');
@@ -28,8 +36,14 @@ class Welcome extends CI_Controller {
 		$this->load->view('datajalan');
 	}
 
-	public function login()
+	public function laporanjalan()
 	{
-		$this->load->view('login');
+		$this->load->view('laporanjalan');
+	}
+
+	public function data(){
+
+		$data['user_account'] = $this->m_data->tampil_data()->result();
+		$this->load->view('v_data',$data);
 	}
 }

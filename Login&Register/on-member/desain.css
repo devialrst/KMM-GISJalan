@@ -1,0 +1,35 @@
+body{
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+/*mendefinisikan perintah untuk design header yang berisi padding,warna huruf,warna background,dan posisi text*/
+header {
+    padding: 0.2em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*mendefinisikan perintah untuk design footer yang berisi padding,warna huruf,warna background,dan posisi text*/
+footer{
+    margin-top: 30px;
+    padding: 1em;
+    color: white;
+    background-color:#585858;
+    clear: left;
+    text-align: center;
+}
+.keluar{
+    padding: 1.48em;
+ position: relative;
+  top: 0px;
+  right: 0px;
+  left: 1000px;
+  border: 3px solid #543535;
+    color: white;
+   background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 1020px;
+    text-decoration: none;
+}

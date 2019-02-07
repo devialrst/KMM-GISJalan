@@ -54,7 +54,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <a href="<?php echo base_url(); ?>datajalan" class="active">Data Jalan</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url(); ?>login">Login</a>
+                        <a href="<?php echo base_url(); ?>laporanjalan">Laporan Jalan</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url(); ?>control_grafik">Grafik Jalan</a>
                     </li>
             </nav>
             <!-- //nav -->
@@ -80,14 +83,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                 <div class="wthree-row py-3">
                     <ul class="portfolio-categ filter pb-md-5 pb-3 mb-4">
-                        <li class="port-filter all active">
-                            <a href="#">Data Jalan</a>
-                        </li>
                         <li class="cat-item-1">
-                            <a href="#" title="Category 1">Foto Jalan</a>
+                            <a href="#" title="Category 1">Infografis Jalan</a>
                         </li>
                         <li class="cat-item-2">
-                            <a href="#" title="Category 2">Laporan Jalan</a>
+                            <a href="#" title="Category 2">Daftar Jalan</a>
+                        </li>
+                        <li class="cat-item-3">
+                            <a href="#" title="Category 2">Foto Jalan</a>
                         </li>
                     </ul>
                 </div>
